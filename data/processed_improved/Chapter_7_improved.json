@@ -1,0 +1,535 @@
+{
+  "metadata": {
+    "filename": "Chapter_7.pdf",
+    "total_pages": 15,
+    "chapter_number": "",
+    "chapter_title": "",
+    "processed_pages": 15,
+    "total_word_count": 6714
+  },
+  "sections": [
+    {
+      "title": "Activity ______________ 7.1",
+      "type": "heading",
+      "content": [],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "• Discuss whether the walls of your classroom are at rest or in motion. Activity ______________ 7.2",
+      "type": "heading",
+      "content": [],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "• Have you ever experienced that the train in which you are sitting appears to move while it is at rest? • Discuss and share your experience. Think and Act",
+      "type": "heading",
+      "content": [
+        "We sometimes are endangered by the motion of objects around us, especially if that motion is erratic and uncontrolled as observed in a flooded river, a hurricane or a tsunami. On the other hand, controlled motion can be a service to human beings such as in the generation of hydro-electric power. Do you feel the necessity to study the erratic motion of some objects and learn to control them?"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "7.1 Describing Motion",
+      "type": "heading",
+      "content": [
+        "We describe the location of an object by specifying a reference point. Let us understand this by an example. Let us assume that a school in a village is 2 km north of the railway station. We have specified the position of the school with respect to the railway station. In this example, the railway station is the reference point. We could have also chosen other reference points according to our convenience. Therefore, to describe the position of an object we need to specify a reference point called the origin."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "7",
+      "type": "heading",
+      "content": [],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "MOTION OTION OTION OTION OTION C hapter",
+      "type": "heading",
+      "content": [
+        "Reprint 2025-26",
+        "7.1.1 MOTION ALONG A STRAIGHT LINE",
+        "The simplest type of motion is the motion along a straight line. We shall first learn to describe this by an example. Consider the motion of an object moving along a straight path. The object starts its journey from O which is treated as its reference point (Fig. 7.1). Let A, B and C represent the position of the object at different instants. At first, the object moves through C and B and reaches A. Then it moves back along the same path and reaches C through B.",
+        "are used to describe the overall motion of an object and to locate its final position with reference to its initial position at a given time."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Activity ______________ 7.3",
+      "type": "heading",
+      "content": [],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "• Take a metre scale and a long rope. • Walk from one corner of a basket-ball court to its oppposite corner along its sides. • Measure the distance covered by you and magnitude of the displacement. • What difference would you notice between the two in this case? Activity ______________ 7.4",
+      "type": "heading",
+      "content": [
+        "• Automobiles are fitted with a device that shows the distance travelled. Such a device is known as an odometer. A car is driven from Bhubaneshwar to New Delhi. The difference between the final reading and the initial reading of the odometer is 1850 km. • Find the magnitude of the displacement between Bhubaneshwar and New Delhi by using the Road Map of India.",
+        "The total path length covered by the object is OA + AC, that is 60 km + 35 km = 95 km. This is the distance covered by the object. To describe distance we need to specify only the numerical value and not the direction of motion. There are certain quantities which are described by specifying only their numerical values. The numerical value of a physical quantity is its magnitude. From this example, can you find out the distance of the final position C of the object from the initial position O? This difference will give you the numerical value of the displacement of the object from O to C through A. The shortest distance measured from the initial to the final position of an object is known as the displacement. Can the magnitude of the displacement be equal to the distance travelled by an object? Consider the example given in (Fig. 7.1). For motion of the object from O to A,  the distance covered is 60 km  and the magnitude of displacement is also 60 km. During its motion from O to A and back to B, the distance covered",
+        "Fig. 7.1: Positions of an object on a straight line path",
+        "= 60 km + 25 km = 85 km while the magnitude of displacement = 35 km. Thus, the magnitude of displacement (35 km) is not equal to the path length (85 km). Further, we will notice that the magnitude of the displacement for a course of motion may be zero but the corresponding distance covered is not zero. If we consider the object to travel back to O, the final position concides with the initial position, and therefore, the displacement is zero. However, the distance covered in this journey is OA + AO = 60 km + 60 km = 120 km. Thus, two different physical quantities—the distance and the displacement,",
+        "MOTION 73",
+        "Reprint 2025-26",
+        "SCIENCE 74"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "uestions",
+      "type": "heading",
+      "content": [
+        "1. An object has moved through a distance. Can it have zero displacement? If yes, support your answer with an example. 2. A farmer moves along the boundary of a square field of side 10 m in 40 s. What will be the magnitude of displacement of the farmer at the end of 2 minutes 20 seconds from his initial position? 3. Which of the following is true for displacement? (a) It cannot be zero. (b) Its magnitude is greater than the distance travelled by the object.",
+        "7.1.2 UNIFORM MOTION AND NON-",
+        "UNIFORM MOTION",
+        "Consider an object moving along a straight line. Let it travel 5 m in the first second, 5 m more in the next second, 5 m in the third second and 5 m in the fourth second. In this case, the object covers 5 m in each second. As the object covers equal distances in equal intervals of time, it is said to be in uniform motion. The time interval in this motion should be small. In our day-to-day life, we come across motions where objects cover unequal distances in equal intervals of time, for example, when a car is moving on a crowded street or a person is jogging in a park. These are some instances of non-uniform motion."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Activity ______________ 7.5",
+      "type": "heading",
+      "content": [
+        "• The data regarding the motion of two different objects A and B are given in Table 7.1. • Examine them carefully and state whether the motion of the objects is uniform or non-uniform."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Q",
+      "type": "heading",
+      "content": [
+        "(a)",
+        "(b) Fig. 7.2",
+        "Table 7.1",
+        "Time Distance Distance travelled by travelled by object A in m object  B in m",
+        "9:30 am 10 12 9:45 am 20 19 10:00 am 30 23 10:15 am 40 35 10:30 am 50 37 10:45 am 60 41 11:00 am 70 44"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "7.2 Measuring the Rate of Motion",
+      "type": "heading",
+      "content": [
+        "Reprint 2025-26",
+        "MOTION 75",
+        "Look at the situations given in Fig. 7.2. If the bowling speed is 143 km h–1 in Fig. 7.2(a) what does it mean? What do you understand from the signboard in Fig. 7.2(b)? Different objects may take different amounts of time to cover a given distance. Some of them move fast and some move slowly. The rate at which objects move can be different. Also, different objects can move at the same rate. One of the ways of measuring the rate of motion of an object is to find out the distance travelled by the object in unit time. This quantity is referred to as speed. The SI unit of speed is metre per second. This is represented by the symbol m s–1 or m/s. The other units of speed include centimetre per second (cm s–1) and kilometre per hour (km h–1). To specify the speed of an object, we require only its magnitude. The speed of an object need not be constant. In most cases, objects will be in non-uniform motion. Therefore, we describe the rate of motion of such objects in terms of their average speed. The average speed of an object is obtained by dividing the total distance travelled by the total time taken. That is,",
+        "average speed = Total distance travelled",
+        "Total time taken",
+        "If an object travels a distance s in time t then its speed v is,",
+        "v = s",
+        "t (7.1)",
+        "Let us understand this by an example. A car travels a distance of 100 km in 2 h. Its average speed is 50 km h–1. The car might not have travelled at 50 km h–1 all the time. Sometimes it might have travelled faster and sometimes slower than this.",
+        "Example 7.1 An object travels 16 m in 4 s and then another 16 m in 2 s. What is the average speed of the object?",
+        "Solution:",
+        "Total distance travelled by the object = 16 m + 16 m = 32 m Total time taken = 4 s + 2 s = 6 s",
+        "Average speed =",
+        "Total distance travelled",
+        "Total time taken",
+        "=",
+        "32 m",
+        "6 s = 5.33 m s–1",
+        "Therefore, the average speed of the object is 5.33 m s–1.",
+        "7.2.1 SPEED WITH DIRECTION",
+        "The rate of motion of an object can be more comprehensive if we specify its direction of motion along with its speed. The quantity that specifies both these aspects is called velocity. Velocity is the speed of an object moving in a definite direction. The velocity of an object can be uniform or variable. It can be changed by changing the object’s speed, direction of motion or both. When an object is moving along a straight line at a variable speed, we can express the magnitude of its rate of motion in terms of average velocity. It is calculated in the same way as we calculate average speed. In case the velocity of the object is changing at a uniform rate, then average velocity is given by the arithmetic mean of initial velocity and final velocity for a given period of time. That is,",
+        "average velocity = initial velocity + final velocity",
+        "2",
+        "Mathematically, v av  =",
+        "u + v",
+        "2",
+        "(7.2)",
+        "where vav is the average velocity, u is the initial velocity and v is the final velocity of the object. Speed and velocity have the same units, that is, m s–1 or m/s."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Activity ______________ 7.6",
+      "type": "heading",
+      "content": [
+        "• Measure the time it takes you to walk from your house to your bus stop or the school. If you consider that your average walking speed is 4 km h–1, estimate the distance of the bus stop or school from your house.",
+        "Reprint 2025-26",
+        "SCIENCE 76 76 76 76 76",
+        "= 50",
+        "km 1000m 1h × × h 1km 3600s",
+        "= 13.9 m s–1",
+        "The average speed of the car is 50 km h–1 or 13.9 m s–1.",
+        "Exampl Exampl Exampl Exampl Example 7. e 7. e 7. e 7. e 7.3 Usha swims in a 90 m long pool. She covers 180 m in one minute by swimming from one end to the other and back along the same straight path. Find the average speed and average velocity of Usha. Solution: Solution: Solution: Solution: Solution: Total distance covered by Usha in 1 min is 180 m. Displacement of Usha in 1 min = 0 m",
+        "Average speed =",
+        "Total distance covered",
+        "Totaltimetaken",
+        "=",
+        "180m 180 m 1 min = × 1min 1min 60s",
+        "= 3 m s-1",
+        "Average velocity =",
+        "Displacement",
+        "Totaltimetaken",
+        "=",
+        "0m",
+        "60 s",
+        "= 0 m s–1",
+        "The average speed of Usha is 3 m s–1",
+        "and her average velocity is 0 m s–1."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "7.3 Rate of Change of Velocity",
+      "type": "heading",
+      "content": [
+        "During uniform motion of an object along a straight line,  the velocity remains constant with time. In this case, the change in velocity of the object for any time interval is zero. However, in non-uniform motion, velocity varies with time. It has different values at different instants and at different points of the path. Thus, the change in velocity of the object during any time interval is not zero. Can we now express the change in velocity of an object?"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Activity Activity Activity Activity Activity 7.7 7.7 7.7 7.7 7.7",
+      "type": "heading",
+      "content": [],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "• At a time when it is cloudy, there may be frequent thunder and lightning. The sound of thunder takes some time to reach you after you see the lightning. • Can you answer why this happens? • Measure this time interval using a digital wrist watch or a stop watch. • Calculate the distance of the nearest point of lightning. (Speed of sound in air = 346 m s-1.) uestions",
+      "type": "heading",
+      "content": [
+        "1. Distinguish between speed and velocity. 2. Under what condition(s) is the magnitude of average velocity of an object equal to its average speed? 3. What does the odometer of an automobile measure? 4. What does the path of an object look like when it is in uniform motion? 5. During an experiment, a signal from a spaceship reached the ground station in five minutes. What was the distance of the spaceship from the ground station? The signal travels at the speed of light, that is, 3 × 108",
+        "m s–1.",
+        "Exampl Exampl Exampl Exampl Example 7.2  e 7.2  e 7.2  e 7.2  e 7.2 The odometer of a car reads 2000 km at the start of a trip and 2400 km at the end of the trip. If the trip took 8 h, calculate the average speed of the car in km h–1 and m s–1.",
+        "Solution: Solution: Solution: Solution: Solution:",
+        "Distance covered by the car, s = 2400 km – 2000 km = 400 km Time elapsed, t = 8 h Average speed of the car is,",
+        "vav =   400 km",
+        "8 h = s",
+        "t",
+        "= 50 km h–1"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Q",
+      "type": "heading",
+      "content": [
+        "Reprint 2025-26",
+        "MOTION 77 77 77 77 77",
+        "To answer such a question, we have to introduce another physical quantity called acceleration, which is a measure of the change in the velocity of an object per unit time. That is,",
+        "acceleration =",
+        "change in velocity",
+        "time taken",
+        "If the velocity of an object changes from an initial value u to the final value v in time t, the acceleration a is,",
+        "v – u a =",
+        "t (7.3)",
+        "This kind of motion is known as accelerated motion. The acceleration is taken to be positive if it is in the direction of velocity and negative when it is opposite to the direction of velocity. The SI unit of acceleration is m s–2 . If an object travels in a straight line and its velocity increases or decreases by equal amounts in equal intervals of time, then the acceleration of the object is said to be uniform. The motion of a freely falling body is an example of uniformly accelerated motion. On the other hand, an object can travel with non-uniform acceleration if its velocity changes at a non-uniform rate. For example, if a car travelling along a straight road increases its speed by unequal amounts in equal intervals of time, then the car is said to be moving with non-uniform acceleration."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Activity Activity Activity Activity Activity 7.8 7.8 7.8 7.8 7.8",
+      "type": "heading",
+      "content": [
+        "• In your everyday life you come across a range of motions in which (a) acceleration is in the direction of motion, (b) acceleration is against the direction of motion, (c) acceleration is uniform, (d) acceleration is non-uniform. • Can you identify one example each for the above type of motion?",
+        "Exampl Exampl Exampl Exampl Example 7.4 Starting from a stationary position, Rahul paddles his bicycle to",
+        "attain a velocity of 6 m s–1 in 30 s. Then he applies brakes such that the velocity of the bicycle comes down to 4 m s-1 in the next 5 s. Calculate the acceleration of the bicycle in both the cases.",
+        "Solution: Solution: Solution: Solution: Solution:",
+        "In the first case: initial velocity, u = 0 ; final velocity, v = 6 m s–1 ; time, t = 30 s . From Eq. (8.3), we have",
+        "v – u a =",
+        "t",
+        "Substituting the given values of u,v and t in the above equation, we get"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "( ) –1 –1 6m s – 0m s = 30 s a",
+      "type": "heading",
+      "content": [
+        "= 0.2 m s–2",
+        "In the second case: initial velocity, u = 6 m s–1; final velocity, v = 4 m s–1; time, t = 5 s."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Then,  ( ) –1 –1 4m s – 6m s = 5 s a",
+      "type": "heading",
+      "content": [
+        "= –0.4 m s–2 . The acceleration of the bicycle in the first case is 0.2 m s–2 and in the second case, it is –0.4 m s–2."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "uestions",
+      "type": "heading",
+      "content": [],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "1. When will you say a body is in (i) uniform acceleration?  (ii) non- uniform acceleration? 2. A bus decreases its speed from 80 km h–1 to 60 km h–1 in 5 s. Find the acceleration of the bus. 3. A train starting from a railway station and moving with uniform acceleration attains a speed 40 km h–1 in 10 minutes. Find its acceleration. Q",
+      "type": "heading",
+      "content": [
+        "Reprint 2025-26",
+        "SCIENCE 78 78 78 78 78"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "7.4 Graphical Representation of Motion",
+      "type": "heading",
+      "content": [
+        "Graphs provide a convenient method to present basic information about a variety of events. For example, in the telecast of a one-day cricket match, vertical bar graphs show the run rate of a team in each over. As you have studied in mathematics, a straight line graph helps in solving a linear equation having two variables. To describe the motion of an object, we can use line graphs. In this case, line graphs show dependence of one physical quantity, such as distance or velocity, on another quantity, such as time.",
+        "7.4.1 DISTANCE–TIME GRAPHS",
+        "The change in the position of an object with time can be represented on the distance-time graph adopting a convenient scale of choice. In this graph, time is taken along the x–axis and distance is taken along the y-axis. Distance-time graphs can be employed under various conditions where objects move with uniform speed, non-uniform speed, remain at rest etc.",
+        "Fig. 7.3: Fig. 7.3: Fig. 7.3: Fig. 7.3: Fig. 7.3: Distance-time graph of an object moving with uniform speed",
+        "We know that when an object travels equal distances in equal intervals of time, it moves with uniform speed. This shows that the",
+        "distance travelled by the object is directly proportional to time taken. Thus, for uniform speed, a graph of distance travelled against time is a straight line, as shown in Fig. 7.3. The portion OB of the graph shows that the distance is increasing at a uniform rate. Note that, you can also use the term uniform velocity in place of uniform speed if you take the magnitude of displacement equal to the distance travelled by the object along the y-axis. We can use the distance-time graph to determine the speed of an object. To do so, consider a small part AB of the distance-time graph shown in Fig 7.3. Draw a line parallel to the x-axis from point A and another line parallel to the y-axis from point B. These two lines meet each other at point C to form a triangle ABC. Now, on the graph, AC denotes the time interval (t2 – t1) while BC corresponds to the distance (s2 – s1). We can see from the graph that as the object moves from the point A to B, it covers a distance (s2 – s1) in time (t2 – t1). The speed, v of the object, therefore can be represented as",
+        "=",
+        "2 1",
+        "2 1",
+        "–",
+        "–",
+        "s s",
+        "t t (7.4)",
+        "We can also plot the distance-time graph for accelerated motion. Table 7.2 shows the distance travelled by a car in a time interval of two seconds.",
+        "Table 7.2: Distance travelled by a Table 7.2: Distance travelled by a Table 7.2: Distance travelled by a Table 7.2: Distance travelled by a Table 7.2: Distance travelled by a car at regular time intervals car at regular time intervals car at regular time intervals car at regular time intervals car at regular time intervals",
+        "Time in seconds Time in seconds Time in seconds Time in seconds Time in seconds Distance in metres Distance in metres Distance in metres Distance in metres Distance in metres",
+        "0 0",
+        "2 1",
+        "4 4",
+        "6 9",
+        "8 16",
+        "10 25",
+        "12 36",
+        "v",
+        "Reprint 2025-26",
+        "MOTION 79",
+        "The distance-time graph for the motion of the car is shown in Fig. 7.4. Note that the shape of this graph is different from the earlier distance-time graph (Fig. 7.3) for uniform motion. The nature of this graph shows non- linear variation of the distance travelled by the car with time. Thus, the graph shown in Fig 7.4 represents motion with non-uniform speed.",
+        "7.4.2 VELOCITY-TIME GRAPHS",
+        "The variation in velocity with time for an object moving in a straight line can be represented by a velocity-time graph. In this graph, time is represented along the x-axis and the velocity",
+        "Fig. 7.4: Distance-time graph for a car moving with non-uniform speed",
+        "Fig. 7.5: Velocity-time graph for uniform motion of a car",
+        "is represented along the y-axis. If the object moves at uniform velocity, the height of its velocity-time graph will not change with time (Fig. 7.5). It will be a straight line parallel to the x-axis. Fig. 7.5 shows the velocity-time graph for a car moving with uniform velocity of 40 km h–1. We know that the product of velocity and time give displacement of an object moving with uniform velocity. The area enclosed by velocity-time graph and the time axis will be equal to the magnitude of the displacement. To know the distance moved by the car between time t1 and t2 using Fig. 7.5, draw perpendiculars from the points corresponding to the time t1 and t2 on the graph. The velocity of 40 km h–1 is represented by the height AC or BD and the time (t2 – t1) is represented by the length AB. So, the distance s moved by the car in time (t2 – t1) can be expressed as s = AC × CD = [(40 km h–1) × (t2 – t1) h] = 40 (t2– t1) km = area of the rectangle ABDC (shaded in Fig. 7.5). We can also study about uniformly accelerated motion by plotting its velocity– time graph. Consider a car being driven along a straight road for testing its engine. Suppose a person sitting next to the driver records its velocity after every 5 seconds by noting the reading of the speedometer of the car. The velocity of the car, in km h–1 as well as in m s–1,  at different instants of time is shown in table 7.3.",
+        "Table 7.3: Velocity of a car at regular instants of time",
+        "Time Velocity of the car   (s) (m s–1) (km h –1)",
+        "0 0 0 5 2.5 9 10 5.0 18 15 7.5 27 20 10.0 36 25 12.5 45 30 15.0 54",
+        "Reprint 2025-26",
+        "SCIENCE 80",
+        "In this case, the velocity-time graph for the motion of the car is shown in Fig. 7.6. The nature of the graph shows that velocity changes by equal amounts in equal intervals of time. Thus, for all uniformly accelerated motion, the velocity-time graph is a straight line.",
+        "Fig. 7.6: Velocity-time graph for a car moving with uniform accelerations.",
+        "You can also determine the distance moved by the car from its velocity-time graph. The area under the velocity-time graph gives the distance (magnitude of displacement) moved by the car in a given interval of time. If the car would have been moving with uniform velocity, the distance travelled by it would be represented by the area ABCD under the graph (Fig. 7.6). Since the magnitude of the velocity of the car is changing due to acceleration, the distance s travelled by the car will be given by the area ABCDE under the velocity-time graph (Fig. 7.6). That is, s = area ABCDE = area of the rectangle ABCD + area of the triangle ADE",
+        "= AB × BC +",
+        "1 2 (AD × DE)",
+        "In the case of non-uniformly accelerated motion, velocity-time graphs can have any shape.",
+        "Fig. 7.7: Velocity-time graphs of an object in non- uniformly accelerated motion.",
+        "Fig. 7.7(a) shows a velocity-time graph that represents the motion of an object whose velocity is decreasing with time while Fig. 7.7 (b) shows the velocity-time graph representing the non-uniform variation of velocity of the object with time. Try to interpret these graphs."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Activity Activity Activity Activity Activity 7.9 7.9 7.9 7.9 7.9",
+      "type": "heading",
+      "content": [
+        "• The times of arrival and departure of a train at three stations A, B and C and the distance of stations B and C from station A are given in Table 7.4.",
+        "Table 7.4: Distances of stations B and C from A and times of arrival and departure of the train",
+        "Station Distance Time of Time of from A arrival departure (km) (hours) (hours)",
+        "A 0 08:00 08:15 B 120 11:15 11:30 C 180 13:00 13:15",
+        "• Plot and interpret the distance-time graph for the train assuming that its motion between any two stations is uniform.",
+        "Velocity (km h –1)",
+        "Reprint 2025-26",
+        "MOTION 81",
+        "4. What is the quantity which is measured by the area occupied below the velocity-time graph?"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "7.5 Equations of Motion",
+      "type": "heading",
+      "content": [
+        "When an object moves along a straight line with uniform acceleration, it is possible to relate its velocity, acceleration during motion and the distance covered by it in a certain time interval by a set of equations known as the equations of motion. For convenience, a set of three such equations are given below: v = u + at (7.5) s = ut + ½ at2 (7.6) 2 as = v2 – u2 (7.7) where u is the initial velocity of the object which moves with uniform acceleration a for time t, v is the final velocity, and s is the distance travelled by the object in time t. Eq. (7.5) describes the velocity-time relation and Eq. (7.6) represents the position-time relation. Eq. (7.7), which represents the relation between the position and the velocity, can be obtained from Eqs. (7.5) and (7.6) by eliminating t. These three equations can be derived by graphical method.",
+        "Example 7.5 A train starting from rest attains a velocity of 72 km h–1 in 5 minutes. Assuming that the acceleration is uniform, find (i) the acceleration and (ii) the distance travelled by the train for attaining this velocity.",
+        "Solution:",
+        "We have been given u = 0 ; v = 72 km h–1 = 20 m s-1 and t = 5 minutes = 300 s. (i) From Eq. (7.5) we know that",
+        "( ) v – u a = t",
+        "–1 –1",
+        "–2",
+        "20 m s – 0 m s = 300s",
+        "1 = m s 15"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Activity Activity Activity Activity Activity 7.10 7.10 7.10 7.10 7.10",
+      "type": "heading",
+      "content": [
+        "• Feroz and his sister Sania go to school on their bicycles. Both of them start at the same time from their home but take different times to reach the school although they follow the same route. Table 7.5 shows the distance travelled by them in different times",
+        "Table 7.5: Distance covered by Feroz and Sania at different times on their bicycles",
+        "Time Distance Distance travelled travelled by Feroz by Sania (km) (km)",
+        "8:00 am 0 0",
+        "8:05 am 1.0 0.8",
+        "8:10 am 1.9 1.6",
+        "8:15 am 2.8 2.3",
+        "8:20 am 3.6 3.0",
+        "8:25 am – 3.6"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Q",
+      "type": "heading",
+      "content": [
+        "• Plot the distance-time graph for their motions on the same scale and interpret."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "uestions",
+      "type": "heading",
+      "content": [
+        "1. What is the nature of the distance-time graphs for uniform and non-uniform motion of an object? 2. What can you say about the motion of an object whose distance-time graph is a straight line parallel to the time axis? 3. What can you say about the motion of an object if its speed- time graph is a straight line parallel to the time axis?",
+        "Reprint 2025-26",
+        "SCIENCE 82",
+        "Example 7.7 The brakes applied to a car produce an acceleration of 6 m s-2 in the opposite direction to the motion. If the car takes 2 s to stop after the application of  brakes, calculate the distance it travels during this time.",
+        "Solution:",
+        "We have been given a = – 6 m s–2  ; t = 2 s and v = 0 m s–1. From Eq. (7.5) we know that v = u + at 0 = u + (– 6 m s–2) × 2 s       or u = 12 m s–1 . From Eq. (7.6) we get",
+        "s = u t +",
+        "1 2  a t 2",
+        "= (12 m s–1 ) × (2 s) +",
+        "1 2   (–6 m s–2 ) (2 s)2",
+        "= 24 m – 12 m = 12 m Thus, the car will move 12 m before it stops after the application of brakes. Can you now appreciate why drivers are cautioned to maintain some distance between vehicles while travelling on the road?"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "uestions",
+      "type": "heading",
+      "content": [
+        "1. A bus starting from rest moves with a uniform acceleration of 0.1 m s-2  for 2 minutes. Find (a) the speed acquired, (b) the distance travelled. 2. A train is travelling at a speed of 90 km h–1. Brakes are applied so as to produce a uniform acceleration of – 0.5 m s-2. Find how far the train will go before it is brought to rest. 3. A trolley, while going down an inclined  plane,  has  an acceleration of 2 cm s-2. What will be its velocity 3 s after the start?",
+        "(ii) From Eq. (7.7) we have 2 as = v2 – u2 = v2 – 0 Thus,",
+        "2",
+        "–1 2",
+        "–2",
+        "= 2",
+        "(20 m s ) =",
+        "2×(1/15) m s",
+        "v s a",
+        "= 3000 m = 3 km",
+        "The acceleration of the train is",
+        "1 15 m s– 2",
+        "and the distance travelled is 3 km.",
+        "Example 7.6 A car accelerates uniformly from 18 km h –1 to 36 km h –1 in 5 s. Calculate (i) the acceleration and (ii) the distance covered by the car in that time.",
+        "Solution:",
+        "We are given that u = 18 km h–1  = 5 m s–1",
+        "v = 36 km h–1  = 10 m s–1 and t = 5 s .",
+        "(i)   From Eq. (7.5) we have",
+        "v – u a =",
+        "t",
+        "=",
+        "-1 -1 10 m s  – 5 m s",
+        "5s",
+        "= 1 m s–2",
+        "(ii) From Eq. (7.6) we have",
+        "s = u t + 1",
+        "2",
+        "a t 2",
+        "= 5 m s–1 × 5 s +",
+        "1 2 × 1 m s–2 × (5 s)2",
+        "= 25 m + 12.5 m",
+        "= 37.5 m The acceleration of the car is 1 m s –2 and the distance covered is 37.5 m."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Q",
+      "type": "heading",
+      "content": [
+        "Reprint 2025-26",
+        "MOTION 83",
+        "4. A racing car has a uniform acceleration of 4 m s-2. What distance will it cover in 10 s after start? 5. A stone is thrown in a vertically upward direction with a velocity of 5 m s-1. If the acceleration of the stone during its motion is 10 m s–2 in the downward direction, what will be the height attained by the stone and how much time will it take to reach there?"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "7.6 Uniform Circular Motion",
+      "type": "heading",
+      "content": [
+        "When the velocity of an object changes, we say that the object is accelerating. The change in the velocity could be due to change in its magnitude or the direction of the motion or both. Can you think of an example when an object does not change its magnitude of velocity but only its direction of motion?",
+        "straight parts AB, BC, CD and DA of the track. In order to keep himself on track, he quickly changes his speed at the corners. How many times will the athlete have to change his direction of motion, while he completes one round? It is clear that to move in a rectangular track once, he has to change his direction of motion four times. Now, suppose instead of a rectangular track, the athlete is running along a hexagonal shaped path ABCDEF, as shown in Fig. 7.8(b). In this situation, the athlete will have to change his direction six times while he  completes one round. What if the track was not a hexagon but a regular octagon, with eight equal sides as shown by ABCDEFGH in Fig. 7.8(c)?  It is observed that as the number of sides of the track increases the athelete has to take turns more and more often. What would happen to the shape of the track as we go on increasing the number of sides indefinitely? If you do this you will notice that the shape of the track approaches the shape of a circle and the length of each of the sides will decrease to a point. If the athlete moves with a velocity of constant magnitude along the circular path, the only change in his velocity is due to the change in the direction of motion. The motion of the athlete moving along a circular path is, therefore, an example of an accelerated motion. We know  that the circumference of a circle of radius r is given by π 2 r . If the athlete takes t seconds to go once around the circular path of radius r, the speed v is given by",
+        "π 2 r v =",
+        "t",
+        "(7.8)",
+        "When an object moves in a circular path with uniform speed, its motion is called uniform circular motion.",
+        "(a) Rectangular track (b) Hexagonal track",
+        "(d) A circular track (c) Octagonal shaped track",
+        "Fig. 7.8: The motion of an athlete along closed tracks of different shapes. Let us consider an example of the motion of a body along a closed path. Fig 8.9 (a) shows the path of an athlete along a rectangular track ABCD. Let us assume that the athlete runs at a uniform speed on the",
+        "Reprint 2025-26",
+        "SCIENCE 84"
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Activity Activity Activity Activity Activity 7.11 7.11 7.11 7.11 7.11",
+      "type": "heading",
+      "content": [
+        "• Take a piece of thread and tie a small piece of stone at one of its ends. Move the stone to describe a circular path with constant speed by holding the thread at the other end, as shown in Fig. 7.9.",
+        "If you carefully note, on being released the stone moves along a straight line tangential to the circular path. This is because once the stone is released, it continues to move along the direction it has been moving at that instant. This shows that the direction of motion changed at every point when the stone was moving along the circular path. When an athlete throws a hammer or a discus in a sports meet, he/she holds the hammer or the discus in his/her hand and gives it a circular motion by rotating his/ her own body. Once released in the desired direction, the hammer or discus moves in the direction in which it was moving at the time it was released, just like the piece of stone in the activity described above. There are many more familiar examples of objects moving under uniform circular motion, such as the motion of the moon and the earth, a satellite in a circular orbit around the earth, a cyclist on a circular track at constant speed and so on."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "What you have learnt",
+      "type": "heading",
+      "content": [
+        "• Motion is a change of position; it can be described in terms of the distance moved or the displacement. • The motion of an object could be uniform or non-uniform depending on whether its velocity is constant or changing. • The speed of an object is the distance covered per unit time, and velocity is the displacement per unit time. • The acceleration of an object is the change in velocity per unit time. • Uniform and non-uniform motions of objects can be shown through graphs.",
+        "• The motion of an object moving at uniform acceleration can be described with the help of the following equations, namely v = u + at s = ut + ½ at2",
+        "2as = v2 – u2",
+        "Fig. 7.9: A stone describing a circular path with a velocity of constant magnitude.",
+        "• Now, let the stone go by releasing the thread. • Can you tell the direction in which the stone moves after it is released? • By repeating the activity for a few times and releasing the stone at different positions of the circular path, check whether the direction in which the stone moves remains the same or not.",
+        "Reprint 2025-26",
+        "MOTION 85 85 85 85 85",
+        "where u is initial velocity of the object, which moves with uniform acceleration a for time t, v is its final velocity and s is the distance it travelled in time t.",
+        "• If an object moves in a circular path with uniform speed, its motion is called uniform circular motion."
+      ],
+      "activities": [],
+      "questions": []
+    },
+    {
+      "title": "Exercises",
+      "type": "heading",
+      "content": [
+        "1. An athlete completes one round of a circular track of diameter 200 m in 40 s. What will be the distance covered and the displacement at the end of 2 minutes 20 s? 2. Joseph jogs from one end A to the other end B of a straight 300 m road in 2 minutes 30 seconds and then turns around and jogs 100 m back to point C in another 1 minute. What are Joseph’s average speeds and velocities in jogging (a) from A to B and (b) from A to C? 3. Abdul, while driving to school, computes the average speed for his trip to be 20 km h–1. On his return trip along the same route, there is less traffic and the average speed is 30 km h–1. What is the average speed for Abdul’s trip? 4. A motorboat starting from rest on a lake accelerates in a straight line at a constant rate of 3.0 m s–2 for 8.0 s. How far does the boat travel during this time? 5. A driver of a car travelling at 52 km h–1 applies the brakes Shade the area on the graph that represents the distance travelled by the car during the period. (b) Which part of the graph represents uniform motion of the car? 6. Fig 7.10 shows the distance-time graph of three objects A,B and C. Study the graph and  answer the following questions:",
+        "Fig. 7.10 Fig. 7.10 Fig. 7.10 Fig. 7.10 Fig. 7.10",
+        "Reprint 2025-26",
+        "SCIENCE 86",
+        "(a) Which of the three is travelling the fastest? (b) Are all three ever at the same point on the road? (c) How far has C travelled when B passes A? (d) How far has B travelled by the time it passes C? 7. A ball is gently dropped from a height of 20 m. If its velocity increases uniformly at the rate of 10 m s-2, with what velocity will it strike the ground? After what time will it strike the ground? 8. The speed-time graph for a car is shown is Fig. 7.11.",
+        "(a) Find how far does the car travel in the first 4 seconds. Shade the area on the graph that represents the distance travelled by the car during the period. (b) Which part of the graph represents uniform motion of the car? 9. State which of the following situations are possible and give an example for each of these: (a) an object with a constant acceleration but with zero velocity (b) an object moving with an acceleration but with uniform speed. (c) an object moving in a certain direction with an acceleration in the perpendicular direction. 10. An artificial satellite is moving in a circular orbit of radius 42250 km. Calculate its speed if it takes 24 hours to revolve around the earth.",
+        "Fig. 7.11",
+        "Reprint 2025-26"
+      ],
+      "activities": [],
+      "questions": []
+    }
+  ],
+  "full_text": "In everyday life, we see some objects at rest\nand others in motion. Birds fly, fish swim,\nblood flows through veins and arteries, and\ncars move. Atoms, molecules, planets, stars\nand galaxies are all in motion. We often\nperceive an object to be in motion when its\nposition changes with time. However, there\nare situations where the motion is inferred\nthrough indirect evidences. For example, we\ninfer the motion of air by observing the\nmovement of dust and the movement of leaves\nand branches of trees. What causes the\nphenomena of sunrise, sunset and changing\nof seasons? Is it due to the motion of the\nearth? If it is true, why don’t we directly\nperceive the motion of the earth?\nAn object may appear to be moving for\none person and stationary for some other. For\nthe passengers in a moving bus, the roadside\ntrees appear to be moving backwards. A\nperson standing on the road–side perceives\nthe bus alongwith the passengers as moving.\nHowever, a passenger inside the bus sees his\nfellow passengers to be at rest. What do these\nobservations indicate?\nMost motions are complex. Some objects\nmay move in a straight line, others may take\na circular path. Some may rotate and a few\nothers may vibrate. There may be situations\ninvolving a combination of these. In this\nchapter, we shall first learn to describe the\nmotion of objects along a straight line. We\nshall also learn to express such motions\nthrough simple equations and graphs. Later,\nwe shall discuss ways of describing\ncircular motion.\nActivity ______________ 7.1\n•\nDiscuss whether the walls of your\nclassroom are at rest or in motion.\nActivity ______________ 7.2\n•\nHave you ever experienced that the\ntrain in which you are sitting appears\nto move while it is at rest?\n•\nDiscuss and share your experience.\nThink and Act\nWe sometimes are endangered by the\nmotion of objects around us, especially\nif that motion is erratic and\nuncontrolled as observed in a flooded\nriver, a hurricane or a tsunami. On the\nother hand, controlled motion can be a\nservice to human beings such as in the\ngeneration of hydro-electric power. Do\nyou feel the necessity to study the\nerratic motion of some objects and\nlearn to control them?\n7.1 Describing Motion\nWe describe the location of an object by\nspecifying a reference point. Let us\nunderstand this by an example. Let us\nassume that a school in a village is 2 km north\nof the railway station. We have specified the\nposition of the school with respect to the\nrailway station. In this example, the railway\nstation is the reference point. We could have\nalso chosen other reference points according\nto our convenience. Therefore, to describe the\nposition of an object we need to specify a\nreference point called the origin.\n\nMOTION\nOTION\nOTION\nOTION\nOTION\nChapter\nReprint 2025-26 7.1.1 MOTION ALONG A STRAIGHT LINE\nThe simplest type of motion is the motion\nalong a straight line. We shall first learn to\ndescribe this by an example. Consider the\nmotion of an object moving along a straight\npath. The object starts its journey from O\nwhich is treated as its reference point\n(Fig. 7.1). Let A, B and C represent the position\nof the object at different instants. At first, the\nobject moves through C and B and reaches A.\nThen it moves back along the same path and\nreaches C through B.\nare used to describe the overall motion of an\nobject and to locate its final position with\nreference to its initial position at a given time.\nActivity ______________ 7.3\n•\nTake a metre scale and a long rope.\n•\nWalk from one corner of a basket-ball\ncourt to its oppposite corner along its\nsides.\n•\nMeasure the distance covered by you\nand magnitude of the displacement.\n•\nWhat difference would you notice\nbetween the two in this case?\nActivity ______________ 7.4\n•\nAutomobiles are fitted with a device\nthat shows the distance travelled. Such\na device is known as an odometer. A\ncar is driven from Bhubaneshwar to\nNew Delhi. The difference between the\nfinal reading and the initial reading of\nthe odometer is 1850 km.\n•\nFind the magnitude of the displacement\nbetween Bhubaneshwar and New Delhi\nby using the Road Map of India.\nThe total path length covered by the object\nis OA + AC, that is 60 km + 35 km = 95 km.\nThis is the distance covered by the object. To\ndescribe distance we need to specify only the\nnumerical value and not the direction of\nmotion. There are certain quantities which\nare described by specifying only their\nnumerical values. The numerical value of a\nphysical quantity is its magnitude. From this\nexample, can you find out the distance of the\nfinal position C of the object from the initial\nposition O? This difference will give you the\nnumerical value of the displacement of the\nobject from O to C through A. The shortest\ndistance measured from the initial to the final\nposition of an object is known as\nthe displacement.\nCan the magnitude of the displacement be\nequal to the distance travelled by an object?\nConsider the example given in (Fig. 7.1). For\nmotion of the object from O to A, the distance\ncovered is 60 km and the magnitude of\ndisplacement is also 60 km. During its motion\nfrom O to A and back to B, the distance covered\nFig. 7.1: Positions of an object on a straight line path\n= 60 km + 25 km = 85 km while the magnitude\nof displacement = 35 km. Thus, the magnitude\nof displacement (35 km) is not equal to the path\nlength (85 km). Further, we will notice that the\nmagnitude of the displacement for a course of\nmotion may be zero but the corresponding\ndistance covered is not zero. If we consider the\nobject to travel back to O, the final position\nconcides with the initial position, and therefore,\nthe displacement is zero. However, the distance\ncovered in this journey is OA + AO = 60 km +\n60 km = 120 km. Thus, two different physical\nquantities—the distance and the displacement,\nMOTION\n\nReprint 2025-26 SCIENCE\n\nuestions\n1.\nAn object has moved through a\ndistance. Can it have zero\ndisplacement? If yes, support\nyour answer with an example.\n2.\nA farmer moves along the\nboundary of a square field of side\n10 m in 40 s. What will be the\nmagnitude of displacement of the\nfarmer at the end of 2 minutes 20\nseconds from his initial position?\n3.\nWhich of the following is true for\ndisplacement?\n(a)\nIt cannot be zero.\n(b)\nIts magnitude is greater than\nthe distance travelled by the\nobject.\n7.1.2 UNIFORM MOTION AND NON-\nUNIFORM MOTION\nConsider an object moving along a straight\nline. Let it travel 5 m in the first second,\n5 m more in the next second, 5 m in the\nthird second and 5 m in the fourth second.\nIn this case, the object covers 5 m in each\nsecond. As the object covers equal distances\nin equal intervals of time, it is said to be in\nuniform motion. The time interval in this\nmotion should be small. In our day-to-day\nlife, we come across motions where objects\ncover unequal distances in equal intervals\nof time, for example, when a car is moving\non a crowded street or a person is jogging\nin a park. These are some instances of\nnon-uniform motion.\nActivity ______________ 7.5\n•\nThe data regarding the motion of two\ndifferent objects A and B are given in\nTable 7.1.\n•\nExamine them carefully and state\nwhether the motion of the objects is\nuniform or non-uniform.\nQ\n(a)\n(b)\nFig. 7.2\nTable 7.1\nTime\nDistance\nDistance\ntravelled by\ntravelled by\nobject A in m\nobject B in m\n9:30 am\n\n\n9:45 am\n\n\n10:00 am\n\n\n10:15 am\n\n\n10:30 am\n\n\n10:45 am\n\n\n11:00 am\n\n\n7.2 Measuring the Rate of Motion\nReprint 2025-26 MOTION\n\nLook at the situations given in Fig. 7.2. If\nthe bowling speed is 143 km h–1 in Fig. 7.2(a)\nwhat does it mean? What do you understand\nfrom the signboard in Fig. 7.2(b)?\nDifferent objects may take different\namounts of time to cover a given distance.\nSome of them move fast and some move\nslowly. The rate at which objects move can\nbe different. Also, different objects can move\nat the same rate. One of the ways of\nmeasuring the rate of motion of an object is\nto find out the distance travelled by the object\nin unit time. This quantity is referred to as\nspeed. The SI unit of speed is metre per\nsecond. This is represented by the symbol\nm s–1 or m/s. The other units of speed include\ncentimetre per second (cm s–1) and kilometre\nper hour (km h–1). To specify the speed of an\nobject, we require only its magnitude. The\nspeed of an object need not be constant. In\nmost cases, objects will be in non-uniform\nmotion. Therefore, we describe the rate of\nmotion of such objects in terms of their\naverage speed. The average speed of an object\nis obtained by dividing the total distance\ntravelled by the total time taken. That is,\naverage speed = Total distance travelled\nTotal time taken\nIf an object travels a distance s in time t then\nits speed v is,\nv = s\nt\n(7.1)\nLet us understand this by an example. A\ncar travels a distance of 100 km in 2 h. Its\naverage speed is 50 km h–1. The car might\nnot have travelled at 50 km h–1 all the time.\nSometimes it might have travelled faster and\nsometimes slower than this.\nExample 7.1 An object travels 16 m in 4 s\nand then another 16 m in 2 s. What is\nthe average speed of the object?\nSolution:\nTotal distance travelled by the object =\n16 m + 16 m = 32 m\nTotal time taken = 4 s + 2 s = 6 s\nAverage speed = \nTotal distance travelled\nTotal time taken\n= \n32 m\n6 s\n= 5.33 m s–1\nTherefore, the average speed of the object\nis 5.33 m s–1.\n7.2.1 SPEED WITH DIRECTION\nThe rate of motion of an object can be more\ncomprehensive if we specify its direction of\nmotion along with its speed. The quantity that\nspecifies both these aspects is called velocity.\nVelocity is the speed of an object moving in a\ndefinite direction. The velocity of an object\ncan be uniform or variable. It can be changed\nby changing the object’s speed, direction of\nmotion or both. When an object is moving\nalong a straight line at a variable speed, we\ncan express the magnitude of its rate of\nmotion in terms of average velocity. It is\ncalculated in the same way as we calculate\naverage speed.\nIn case the velocity of the object is\nchanging at a uniform rate, then average\nvelocity is given by the arithmetic mean of\ninitial velocity and final velocity for a given\nperiod of time. That is,\naverage velocity = initial velocity + final velocity\n\nMathematically, v av = \nu + v\n\n(7.2)\nwhere vav is the average velocity, u is the initial\nvelocity and v is the final velocity of the object.\nSpeed and velocity have the same units,\nthat is, m s–1 or m/s.\nActivity ______________ 7.6\n•\nMeasure the time it takes you to walk\nfrom your house to your bus stop or\nthe school. If you consider that your\naverage walking speed is 4 km h–1,\nestimate the distance of the bus stop\nor school from your house.\nReprint 2025-26 SCIENCE\n\n\n\n\n\n= 50\nkm\n1000m\n1h\n×\n×\nh\n1km\n3600s\n= 13.9 m s–1\nThe average speed of the car is\n50 km h–1 or 13.9 m s–1.\nExampl\nExampl\nExampl\nExampl\nExample 7.\ne 7.\ne 7.\ne 7.\ne 7.3 Usha swims in a 90 m long\npool. She covers 180 m in one minute\nby swimming from one end to the other\nand back along the same straight path.\nFind the average speed and average\nvelocity of Usha.\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nTotal distance covered by Usha in 1 min\nis 180 m.\nDisplacement of Usha in 1 min = 0 m\nAverage speed = \nTotal distance covered\nTotaltimetaken\n=\n180m\n180 m\n1 min\n=\n×\n1min\n1min\n60s\n= 3 m s-1\nAverage velocity = \nDisplacement\nTotaltimetaken\n= \n0m\n60 s\n= 0 m s–1\nThe average speed of Usha is 3 m s–1\nand her average velocity is 0 m s–1.\n7.3 Rate of Change of Velocity\nDuring uniform motion of an object along a\nstraight line, the velocity remains constant\nwith time. In this case, the change in velocity\nof the object for any time interval is zero.\nHowever, in non-uniform motion, velocity\nvaries with time. It has different values at\ndifferent instants and at different points of\nthe path. Thus, the change in velocity of the\nobject during any time interval is not zero.\nCan we now express the change in velocity\nof an object?\nActivity\nActivity\nActivity\nActivity\nActivity\n7.7\n7.7\n7.7\n7.7\n7.7\n•\nAt a time when it is cloudy, there may\nbe frequent thunder and lightning. The\nsound of thunder takes some time to\nreach you after you see the lightning.\n•\nCan you answer why this happens?\n•\nMeasure this time interval using a\ndigital wrist watch or a stop watch.\n•\nCalculate the distance of the nearest\npoint of lightning. (Speed of sound in\nair = 346 m s-1.)\nuestions\n1.\nDistinguish between speed and\nvelocity.\n2.\nUnder what condition(s) is the\nmagnitude of average velocity of\nan object equal to its average\nspeed?\n3.\nWhat does the odometer of an\nautomobile measure?\n4.\nWhat does the path of an object\nlook like when it is in uniform\nmotion?\n5.\nDuring an experiment, a signal\nfrom a spaceship reached the\nground station in five minutes.\nWhat was the distance of the\nspaceship from the ground\nstation? The signal travels at the\nspeed of light, that is, 3 × 108\nm s–1.\nExampl\nExampl\nExampl\nExampl\nExample 7.2 \ne 7.2 \ne 7.2 \ne 7.2 \ne 7.2 The odometer of a car reads\n2000 km at the start of a trip and\n2400 km at the end of the trip. If the\ntrip took 8 h, calculate the average\nspeed of the car in km h–1 and m s–1.\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nDistance covered by the car,\ns = 2400 km – 2000 km = 400 km\nTime elapsed, t = 8 h\nAverage speed of the car is,\nvav = \n400 km\n8 h\n=\ns\nt\n= 50 km h–1\nQ\nReprint 2025-26 MOTION\n\n\n\n\n\nTo answer such a question, we have to\nintroduce another physical quantity called\nacceleration, which is a measure of the\nchange in the velocity of an object per unit\ntime. That is,\nacceleration =\nchange in velocity\ntime taken\nIf the velocity of an object changes from\nan initial value u to the final value v in time\nt, the acceleration a is,\nv – u\na =\nt\n(7.3)\nThis kind of motion is known as\naccelerated motion. The acceleration is taken\nto be positive if it is in the direction of velocity\nand negative when it is opposite to the\ndirection of velocity. The SI unit of\nacceleration is m s–2 .\nIf an object travels in a straight line and\nits velocity increases or decreases by equal\namounts in equal intervals of time, then the\nacceleration of the object is said to be\nuniform. The motion of a freely falling body\nis an example of uniformly accelerated\nmotion. On the other hand, an object can\ntravel with non-uniform acceleration if its\nvelocity changes at a non-uniform rate. For\nexample, if a car travelling along a straight\nroad increases its speed by unequal amounts\nin equal intervals of time, then the car is said\nto be moving with non-uniform acceleration.\nActivity\nActivity\nActivity\nActivity\nActivity\n7.8\n7.8\n7.8\n7.8\n7.8\n•\nIn your everyday life you come across\na range of motions in which\n(a)\nacceleration is in the direction of\nmotion,\n(b)\nacceleration is against the\ndirection of motion,\n(c)\nacceleration is uniform,\n(d)\nacceleration is non-uniform.\n•\nCan you identify one example each\nfor the above type of motion?\nExampl\nExampl\nExampl\nExampl\nExample 7.4 Starting from a stationary\nposition, Rahul paddles his bicycle to\nattain a velocity of 6 m s–1 in 30 s. Then\nhe applies brakes such that the velocity\nof the bicycle comes down to 4 m s-1 in\nthe next 5 s. Calculate the acceleration\nof the bicycle in both the cases.\nSolution:\nSolution:\nSolution:\nSolution:\nSolution:\nIn the first case:\ninitial velocity, u = 0 ;\nfinal velocity, v = 6 m s–1 ;\ntime, t = 30 s .\nFrom Eq. (8.3), we have\nv – u\na =\nt\nSubstituting the given values of u,v and\nt in the above equation, we get\n(\n)\n–1\n–1\n6m s\n– 0m s\n=\n30 s\na\n= 0.2 m s–2\nIn the second case:\ninitial velocity, u = 6 m s–1;\nfinal velocity, v = 4 m s–1;\ntime, t = 5 s.\nThen, \n(\n)\n–1\n–1\n4m s\n– 6m s\n=\n5 s\na\n= –0.4 m s–2 .\nThe acceleration of the bicycle in the\nfirst case is 0.2 m s–2 and in the second\ncase, it is –0.4 m s–2.\nuestions\n1.\nWhen will you say a body is in\n(i) uniform acceleration? (ii) non-\nuniform acceleration?\n2.\nA bus decreases its speed from\n80 km h–1 to 60 km h–1 in 5 s.\nFind the acceleration of the bus.\n3.\nA train starting from a railway\nstation and moving with uniform\nacceleration attains a speed\n40 km h–1 in 10 minutes. Find\nits acceleration.\nQ\nReprint 2025-26 SCIENCE\n\n\n\n\n\n7.4 Graphical Representation of\nMotion\nGraphs provide a convenient method to\npresent basic information about a variety of\nevents. For example, in the telecast of a\none-day cricket match, vertical bar graphs\nshow the run rate of a team in each over. As\nyou have studied in mathematics, a straight\nline graph helps in solving a linear equation\nhaving two variables.\nTo describe the motion of an object, we\ncan use line graphs. In this case, line graphs\nshow dependence of one physical quantity,\nsuch as distance or velocity, on another\nquantity, such as time.\n7.4.1 DISTANCE–TIME GRAPHS\nThe change in the position of an object with\ntime can be represented on the distance-time\ngraph adopting a convenient scale of choice.\nIn this graph, time is taken along the x–axis\nand distance is taken along the y-axis.\nDistance-time graphs can be employed under\nvarious conditions where objects move with\nuniform speed, non-uniform speed, remain\nat rest etc.\nFig. 7.3:\nFig. 7.3:\nFig. 7.3:\nFig. 7.3:\nFig. 7.3: Distance-time graph of an object moving\nwith uniform speed\nWe know that when an object travels equal\ndistances in equal intervals of time, it moves\nwith uniform speed. This shows that the\ndistance travelled by the object is directly\nproportional to time taken. Thus, for uniform\nspeed, a graph of distance travelled against\ntime is a straight line, as shown in Fig. 7.3.\nThe portion OB of the graph shows that the\ndistance is increasing at a uniform rate. Note\nthat, you can also use the term uniform\nvelocity in place of uniform speed if you take\nthe magnitude of displacement equal to the\ndistance travelled by the object along the\ny-axis.\nWe can use the distance-time graph to\ndetermine the speed of an object. To do so,\nconsider a small part AB of the distance-time\ngraph shown in Fig 7.3. Draw a line parallel\nto the x-axis from point A and another line\nparallel to the y-axis from point B. These two\nlines meet each other at point C to form a\ntriangle ABC. Now, on the graph, AC denotes\nthe time interval (t2 – t1) while BC corresponds\nto the distance (s2 – s1). We can see from the\ngraph that as the object moves from the point\nA to B, it covers a distance (s2 – s1) in time\n(t2 – t1). The speed, v of the object, therefore\ncan be represented as\n = \n\n\n\n\n–\n–\ns\ns\nt\nt\n(7.4)\nWe can also plot the distance-time graph\nfor accelerated motion. Table 7.2 shows the\ndistance travelled by a car in a time interval\nof two seconds.\nTable 7.2: Distance travelled by a\nTable 7.2: Distance travelled by a\nTable 7.2: Distance travelled by a\nTable 7.2: Distance travelled by a\nTable 7.2: Distance travelled by a\ncar at regular time intervals\ncar at regular time intervals\ncar at regular time intervals\ncar at regular time intervals\ncar at regular time intervals\nTime in seconds\nTime in seconds\nTime in seconds\nTime in seconds\nTime in seconds\nDistance in metres\nDistance in metres\nDistance in metres\nDistance in metres\nDistance in metres\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nv\nReprint 2025-26 MOTION\n\nThe distance-time graph for the motion\nof the car is shown in Fig. 7.4. Note that the\nshape of this graph is different from the earlier\ndistance-time graph (Fig. 7.3) for uniform\nmotion. The nature of this graph shows non-\nlinear variation of the distance travelled by\nthe car with time. Thus, the graph shown in\nFig 7.4 represents motion with non-uniform\nspeed.\n7.4.2 VELOCITY-TIME GRAPHS\nThe variation in velocity with time for an object\nmoving in a straight line can be represented\nby a velocity-time graph. In this graph, time is\nrepresented along the x-axis and the velocity\nFig. 7.4: Distance-time graph for a car moving with\nnon-uniform speed\nFig. 7.5: Velocity-time graph for uniform motion\nof a car\nis represented along the y-axis. If the object\nmoves at uniform velocity, the height of its\nvelocity-time graph will not change with time\n(Fig. 7.5). It will be a straight line parallel to\nthe x-axis. Fig. 7.5 shows the velocity-time\ngraph for a car moving with uniform velocity\nof 40 km h–1.\nWe know that the product of velocity and\ntime give displacement of an object moving\nwith uniform velocity. The area enclosed by\nvelocity-time graph and the time axis will be\nequal to the magnitude of the displacement.\nTo know the distance moved by the car\nbetween time t1 and t2 using Fig. 7.5, draw\nperpendiculars from the points corresponding\nto the time t1 and t2 on the graph. The velocity\nof 40 km h–1 is represented by the height AC\nor BD and the time (t2 – t1) is represented by\nthe length AB.\nSo, the distance s moved by the car in\ntime (t2 – t1) can be expressed as\ns = AC × CD\n= [(40 km h–1) × (t2 – t1) h]\n= 40 (t2– t1) km\n= area of the rectangle ABDC (shaded\nin\nFig. 7.5).\nWe can also study about uniformly\naccelerated motion by plotting its velocity–\ntime graph. Consider a car being driven along\na straight road for testing its engine. Suppose\na person sitting next to the driver records its\nvelocity after every 5 seconds by noting the\nreading of the speedometer of the car. The\nvelocity of the car, in km h–1 as well as in\nm s–1, at different instants of time is shown\nin table 7.3.\nTable 7.3: Velocity of a car at\nregular instants of time\nTime\nVelocity of the car\n (s)\n(m s–1)\n(km h\n–1)\n\n\n\n\n2.5\n\n\n5.0\n\n\n7.5\n\n\n10.0\n\n\n12.5\n\n\n15.0\n\nReprint 2025-26 SCIENCE\n\nIn this case, the velocity-time graph for the\nmotion of the car is shown in Fig. 7.6. The\nnature of the graph shows that velocity\nchanges by equal amounts in equal intervals\nof time. Thus, for all uniformly accelerated\nmotion, the velocity-time graph is a\nstraight line.\nFig. 7.6: Velocity-time graph for a car moving with\nuniform accelerations.\nYou can also determine the distance\nmoved by the car from its velocity-time graph.\nThe area under the velocity-time graph gives\nthe distance (magnitude of displacement)\nmoved by the car in a given interval of time.\nIf the car would have been moving with\nuniform velocity, the distance travelled by it\nwould be represented by the area ABCD\nunder the graph (Fig. 7.6). Since the\nmagnitude of the velocity of the car is\nchanging due to acceleration, the distance s\ntravelled by the car will be given by the area\nABCDE under the velocity-time graph\n(Fig. 7.6).\nThat is,\ns = area ABCDE\n= area of the rectangle ABCD + area of\nthe triangle ADE\n= AB × BC + \n\n2 (AD × DE)\nIn the case of non-uniformly accelerated\nmotion, velocity-time graphs can have any\nshape.\nFig. 7.7: Velocity-time graphs of an object in non-\nuniformly accelerated motion.\nFig. 7.7(a) shows a velocity-time graph that\nrepresents the motion of an object whose\nvelocity is decreasing with time while\nFig. 7.7 (b) shows the velocity-time graph\nrepresenting the non-uniform variation of\nvelocity of the object with time. Try to interpret\nthese graphs.\nActivity\nActivity\nActivity\nActivity\nActivity\n7.9\n7.9\n7.9\n7.9\n7.9\n•\nThe times of arrival and departure of\na train at three stations A, B and C\nand the distance of stations B and C\nfrom station A are given in Table 7.4.\nTable 7.4: Distances of stations B\nand C from A and times of arrival\nand departure of the train\nStation\nDistance\nTime of\nTime of\nfrom A\narrival\ndeparture\n(km)\n(hours)\n(hours)\nA\n\n08:00\n08:15\nB\n\n11:15\n11:30\nC\n\n13:00\n13:15\n•\nPlot and interpret the distance-time\ngraph for the train assuming that its\nmotion between any two stations is\nuniform.\nVelocity (km h\n–1)\nReprint 2025-26 MOTION\n\n4.\nWhat is the quantity which is\nmeasured by the area occupied\nbelow the velocity-time graph?\n7.5 Equations of Motion\nWhen an object moves along a straight line\nwith uniform acceleration, it is possible to\nrelate its velocity, acceleration during motion\nand the distance covered by it in a certain\ntime interval by a set of equations known as\nthe equations of motion. For convenience, a\nset of three such equations are given below:\nv = u + at\n(7.5)\ns = ut + ½ at2\n(7.6)\n2 as\n= v2 – u2\n(7.7)\nwhere u is the initial velocity of the object which\nmoves with uniform acceleration a for time t,\nv is the final velocity, and s is the distance\ntravelled by the object in time t. Eq. (7.5)\ndescribes the velocity-time relation and Eq.\n(7.6) represents the position-time relation. Eq.\n(7.7), which represents the relation between the\nposition and the velocity, can be obtained from\nEqs. (7.5) and (7.6) by eliminating t. These\nthree equations can be derived by graphical\nmethod.\nExample 7.5 A train starting from rest\nattains a velocity of 72 km h–1 in 5\nminutes. Assuming that the acceleration\nis uniform, find (i) the acceleration and\n(ii) the distance travelled by the train for\nattaining this velocity.\nSolution:\nWe have been given\nu = 0 ; v = 72 km h–1 = 20 m s-1 and\nt = 5 minutes = 300 s.\n(i) From Eq. (7.5) we know that\n(\n)\nv – u\na =\nt\n–1\n–1\n–2\n20 m s\n– 0 m s\n=\n300s\n\n=\nm s\n\nActivity\nActivity\nActivity\nActivity\nActivity\n7.10\n7.10\n7.10\n7.10\n7.10\n•\nFeroz and his sister Sania go to school\non their bicycles. Both of them start at\nthe same time from their home but take\ndifferent times to reach the school\nalthough they follow the same route.\nTable 7.5 shows the distance travelled\nby them in different times\nTable 7.5: Distance covered by\nFeroz and Sania at different\ntimes on their bicycles\nTime\nDistance\nDistance\ntravelled\ntravelled\nby Feroz\nby Sania\n(km)\n(km)\n8:00 am\n\n\n8:05 am\n1.0\n0.8\n8:10 am\n1.9\n1.6\n8:15 am\n2.8\n2.3\n8:20 am\n3.6\n3.0\n8:25 am\n–\n3.6\nQ\n•\nPlot the distance-time graph for their\nmotions on the same scale and\ninterpret.\nuestions\n1.\nWhat is the nature of the\ndistance-time graphs for uniform\nand non-uniform motion of an\nobject?\n2.\nWhat can you say about the\nmotion of an object whose\ndistance-time graph is a straight\nline parallel to the time axis?\n3.\nWhat can you say about the\nmotion of an object if its speed-\ntime graph is a straight line\nparallel to the time axis?\nReprint 2025-26 SCIENCE\n\nExample 7.7 The brakes applied to a car\nproduce an acceleration of 6 m s-2 in the\nopposite direction to the motion. If the\ncar takes 2 s to stop after the application\nof brakes, calculate the distance it\ntravels during this time.\nSolution:\nWe have been given\na = – 6 m s–2 ; t = 2 s and v = 0 m s–1.\nFrom Eq. (7.5) we know that\nv = u + at\n0 = u + (– 6 m s–2) × 2 s\n or\nu = 12 m s–1 .\nFrom Eq. (7.6) we get\ns = u t + \n\n2 a t 2\n= (12 m s–1 ) × (2 s) + \n\n2 (–6 m s–2 ) (2 s)2\n= 24 m – 12 m\n= 12 m\nThus, the car will move 12 m before it\nstops after the application of brakes. Can\nyou now appreciate why drivers are\ncautioned to maintain some distance\nbetween vehicles while travelling on the\nroad?\nuestions\n1.\nA bus starting from rest moves\nwith a uniform acceleration of\n0.1 m s-2 for 2 minutes. Find (a)\nthe speed acquired, (b) the\ndistance travelled.\n2.\nA train is travelling at a speed\nof 90 km h–1. Brakes are applied\nso as to produce a uniform\nacceleration of – 0.5 m s-2. Find\nhow far the train will go before it\nis brought to rest.\n3.\nA trolley, while going down an\ninclined \nplane, \nhas \nan\nacceleration of 2 cm s-2. What will\nbe its velocity 3 s after the start?\n(ii) From Eq. (7.7) we have\n2 as = v2 – u2 = v2 – 0\nThus,\n\n–1 2\n–2\n=\n\n(20 m s\n)\n=\n2×(1/15) m s\nv\ns\na\n= 3000 m\n= 3 km\nThe acceleration of the train is \n\n15 m s– 2\nand the distance travelled is 3 km.\nExample 7.6 A car accelerates uniformly\nfrom 18 km h\n–1 to 36 km h\n–1 in 5 s.\nCalculate (i) the acceleration and (ii) the\ndistance covered by the car in that time.\nSolution:\nWe are given that\nu =\n18 km h–1 = 5 m s–1\nv\n=\n36 km h–1 = 10 m s–1 and\nt\n=\n5 s .\n(i) From Eq. (7.5) we have\nv – u\na =\nt\n= \n-1\n-1\n10 m s – 5 m s\n5s\n= 1 m s–2\n(ii) From Eq. (7.6) we have\ns = u t + 1\n\na t 2\n= 5 m s–1 × 5 s + \n\n2 × 1 m s–2 × (5 s)2\n= 25 m + 12.5 m\n= 37.5 m\nThe acceleration of the car is 1 m s\n–2 and\nthe distance covered is 37.5 m.\nQ\nReprint 2025-26 MOTION\n\n4.\nA racing car has a uniform\nacceleration of 4 m s-2. What\ndistance will it cover in 10 s after\nstart?\n5.\nA stone is thrown in a vertically\nupward direction with a velocity\nof 5 m s-1. If the acceleration of\nthe stone during its motion is 10\nm s–2 in the downward direction,\nwhat will be the height attained\nby the stone and how much time\nwill it take to reach there?\n7.6 Uniform Circular Motion\nWhen the velocity of an object changes, we say\nthat the object is accelerating. The change in\nthe velocity could be due to change in its\nmagnitude or the direction of the motion or\nboth. Can you think of an example when an\nobject does not change its magnitude of\nvelocity but only its direction of motion?\nstraight parts AB, BC, CD and DA of the track.\nIn order to keep himself on track, he quickly\nchanges his speed at the corners. How many\ntimes will the athlete have to change his\ndirection of motion, while he completes one\nround? It is clear that to move in a rectangular\ntrack once, he has to change his direction of\nmotion four times.\nNow, suppose instead of a rectangular\ntrack, the athlete is running along a\nhexagonal shaped path ABCDEF, as shown\nin Fig. 7.8(b). In this situation, the athlete will\nhave to change his direction six times while\nhe completes one round. What if the track\nwas not a hexagon but a regular octagon,\nwith eight equal sides as shown by\nABCDEFGH in Fig. 7.8(c)? It is observed that\nas the number of sides of the track increases\nthe athelete has to take turns more and more\noften. What would happen to the shape of the\ntrack as we go on increasing the number of\nsides indefinitely? If you do this you will\nnotice that the shape of the track approaches\nthe shape of a circle and the length of each of\nthe sides will decrease to a point. If the athlete\nmoves with a velocity of constant magnitude\nalong the circular path, the only change in\nhis velocity is due to the change in the\ndirection of motion. The motion of the athlete\nmoving along a circular path is, therefore, an\nexample of an accelerated motion.\nWe know that the circumference of a circle\nof radius r is given by π\n2 r . If the athlete takes\nt seconds to go once around the circular path\nof radius r, the speed v is given by\nπ\n2 r\nv =\nt\n(7.8)\nWhen an object moves in a circular path\nwith uniform speed, its motion is called\nuniform circular motion.\n(a) Rectangular track\n(b) Hexagonal track\n(d) A circular track\n(c) Octagonal shaped track\nFig. 7.8: The motion of an athlete along closed tracks\nof different shapes.\nLet us consider an example of the motion\nof a body along a closed path. Fig 8.9 (a)\nshows the path of an athlete along a\nrectangular track ABCD. Let us assume that\nthe athlete runs at a uniform speed on the\nReprint 2025-26 SCIENCE\n\nActivity\nActivity\nActivity\nActivity\nActivity\n7.11\n7.11\n7.11\n7.11\n7.11\n•\nTake a piece of thread and tie a small\npiece of stone at one of its ends. Move\nthe stone to describe a circular path\nwith constant speed by holding the\nthread at the other end, as shown in\nFig. 7.9.\nIf you carefully note, on being released\nthe stone moves along a straight line\ntangential to the circular path. This is\nbecause once the stone is released, it\ncontinues to move along the direction it has\nbeen moving at that instant. This shows that\nthe direction of motion changed at every point\nwhen the stone was moving along the circular\npath.\nWhen an athlete throws a hammer or a\ndiscus in a sports meet, he/she holds the\nhammer or the discus in his/her hand and\ngives it a circular motion by rotating his/\nher own body. Once released in the desired\ndirection, the hammer or discus moves in\nthe direction in which it was moving at the\ntime it was released, just like the piece of\nstone in the activity described above. There\nare many more familiar examples of objects\nmoving under uniform circular motion,\nsuch as the motion of the moon and the\nearth, a satellite in a circular orbit around\nthe earth, a cyclist on a circular track at\nconstant speed and so on.\nWhat\nyou have\nlearnt\n•\nMotion is a change of position; it can be described in terms\nof the distance moved or the displacement.\n•\nThe motion of an object could be uniform or non-uniform\ndepending on whether its velocity is constant or changing.\n•\nThe speed of an object is the distance covered per unit time,\nand velocity is the displacement per unit time.\n•\nThe acceleration of an object is the change in velocity per\nunit time.\n•\nUniform and non-uniform motions of objects can be shown\nthrough graphs.\n•\nThe motion of an object moving at uniform acceleration can\nbe described with the help of the following equations, namely\nv = u + at\ns = ut + ½ at2\n2as = v2 – u2\nFig. 7.9:\nA stone describing a circular path with\na velocity of constant magnitude.\n•\nNow, let the stone go by releasing the\nthread.\n•\nCan you tell the direction in which\nthe stone moves after it is released?\n•\nBy repeating the activity for a few\ntimes and releasing the stone at\ndifferent positions of the circular\npath, check whether the direction in\nwhich the stone moves remains the\nsame or not.\nReprint 2025-26 MOTION\n\n\n\n\n\nwhere u is initial velocity of the object, which moves with\nuniform acceleration a for time t, v is its final velocity and\ns is the distance it travelled in time t.\n•\nIf an object moves in a circular path with uniform speed,\nits motion is called uniform circular motion.\nExercises\n1.\nAn athlete completes one round of a circular track of\ndiameter 200 m in 40 s. What will be the distance covered\nand the displacement at the end of 2 minutes 20 s?\n2.\nJoseph jogs from one end A to the other end B of a straight\n300 m road in 2 minutes 30 seconds and then turns around\nand jogs 100 m back to point C in another 1 minute. What\nare Joseph’s average speeds and velocities in jogging (a)\nfrom A to B and (b) from A to C?\n3.\nAbdul, while driving to school, computes the average speed\nfor his trip to be 20 km h–1. On his return trip along the\nsame route, there is less traffic and the average speed is\n30 km h–1. What is the average speed for Abdul’s trip?\n4.\nA motorboat starting from rest on a lake accelerates in a\nstraight line at a constant rate of 3.0 m s–2 for 8.0 s. How\nfar does the boat travel during this time?\n5.\nA driver of a car travelling at 52 km h–1 applies the brakes\nShade the area on the graph that represents the distance\ntravelled by the car during the period.\n(b) Which part of the graph represents uniform motion of\nthe car?\n6.\nFig 7.10 shows the distance-time graph of three objects A,B\nand C. Study the graph and answer the following questions:\nFig. 7.10\nFig. 7.10\nFig. 7.10\nFig. 7.10\nFig. 7.10\nReprint 2025-26 SCIENCE\n\n(a) Which of the three is travelling the fastest?\n(b) Are all three ever at the same point on the road?\n(c) How far has C travelled when B passes A?\n(d) How far has B travelled by the time it passes C?\n7.\nA ball is gently dropped from a height of 20 m. If its velocity\nincreases uniformly at the rate of 10 m s-2, with what velocity\nwill it strike the ground? After what time will it strike the\nground?\n8.\nThe speed-time graph for a car is shown is Fig. 7.11.\n(a) Find how far does the car travel in the first 4 seconds.\nShade the area on the graph that represents the distance\ntravelled by the car during the period.\n(b) Which part of the graph represents uniform motion of\nthe car?\n9.\nState which of the following situations are possible and give\nan example for each of these:\n(a) an object with a constant acceleration but with zero\nvelocity\n(b) an object moving with an acceleration but with uniform\nspeed.\n(c) an object moving in a certain direction with an\nacceleration in the perpendicular direction.\n10.\nAn artificial satellite is moving in a circular orbit of radius\n42250 km. Calculate its speed if it takes 24 hours to revolve\naround the earth.\nFig. 7.11\nReprint 2025-26"
+}

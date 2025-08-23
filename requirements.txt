@@ -1,17 +1,27 @@
-qdrant-client>=1.5.0,<1.8.0
-# Instead of nvidia-nv-embed, consider alternatives:
-sentence-transformers>=2.2.2
-torch==2.2.0
-transformers==4.38.2
-fastapi==0.110.0
-uvicorn==0.27.0
-python-multipart==0.0.9
-python-dotenv==1.0.1
-langchain==0.1.5
-tiktoken==0.5.2
-numpy==1.26.3
-pytest==8.0.0
-scikit-learn==1.4.0
-# For document processing
-PyPDF2==3.0.1
-docx2txt==0.8
+# Day 1 RAG System Requirements - Following Exact Specifications
+qdrant-client>=1.7.0
+torch>=2.0.0
+transformers>=4.35.0
+
+# NVIDIA nv-embed (as specified in requirements)
+# Note: This may require special installation from NVIDIA
+sentence-transformers>=2.2.2  # Fallback until nv-embed is available
+
+# Document processing
+pdfplumber>=0.9.0
+pytesseract>=0.3.10
+pdf2image>=3.1.0
+Pillow>=10.0.0
+
+# Core utilities
+python-dotenv>=1.0.0
+tqdm>=4.65.0
+numpy>=1.24.0
+tiktoken>=0.5.0
+
+# API (Flask as per original requirements)
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Development
+pytest>=7.4.0
