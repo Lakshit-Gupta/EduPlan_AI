@@ -65,7 +65,7 @@ EduPlan_AI/
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Lakshit-Gupta/EduPlan_AI.git
 cd EduPlan_AI
 
 # Install dependencies
