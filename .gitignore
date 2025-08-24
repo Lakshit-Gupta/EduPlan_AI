@@ -44,4 +44,6 @@ rag_data/
 .env
 
 # Qdrant data
-qdrant_storage/
+# qdrant_storage/
+qdrant_storage/collections/midjourney
+qdrant_storage/collections/test_collection
