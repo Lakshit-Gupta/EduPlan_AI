@@ -1,156 +1,313 @@
 #!/usr/bin/env python3
 """
-Updated MVP Pipeline using improved PDF extraction and processing
+Run the improved EduPlan AI pipeline.
+This script demonstrates the full pipeline of generating a lesson plan
+using the improved data and embeddings.
 """
 
 import sys
 import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+import json
+import time
+from typing import List, Dict, Any
+import logging
+from pathlib import Path
 
-from src.processors.improved_document_processor import ImprovedDocumentProcessor
+# Add parent directory to path to import modules
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Import required modules
 from src.models.embedding_model import NVEmbedPipeline
-from src.core.vector_database import QdrantDB
-from src.generators.lesson_plan_generator import LessonPlanGenerator
+from src.database.qdrant_connector import QdrantConnector
+from src.core.config import (
+    QDRANT_HOST, 
+    QDRANT_PORT, 
+    QDRANT_COLLECTION_NAME,
+    LESSON_PLANS_DIR
+)
 
-def check_qdrant_connection():
-    """Check if Qdrant is running"""
-    try:
-        db = QdrantDB()
-        print("✅ Qdrant is running!")
-        return True
-    except Exception as e:
-        print(f"❌ Qdrant connection failed: {e}")
-        return False
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
-def setup_improved_database():
-    """Set up the vector database with improved documents"""
-    print("🚀 Setting up EduPlan AI - IMPROVED Pipeline")
-    print("="*50)
+class LessonPlanGenerator:
+    """Generate lesson plans using vector search."""
     
-    try:
-        # Step 1: Process documents with improved extractor
-        print("\n📄 Step 1: Processing improved documents...")
-        processor = ImprovedDocumentProcessor(use_improved_data=True)
-        documents, metadata = processor.process_all_improved_documents()
+    def __init__(self):
+        """Initialize the lesson plan generator."""
+        # Initialize embedding model
+        self.embedder = NVEmbedPipeline()
         
-        if not documents:
-            print("❌ No documents found to process!")
-            return False
+        # Initialize database connector
+        self.db = QdrantConnector(
+            host=QDRANT_HOST,
+            port=QDRANT_PORT,
+            collection_name=QDRANT_COLLECTION_NAME,
+            vector_size=4096
+        )
         
-        # Step 2: Generate embeddings
-        print(f"\n🧠 Step 2: Generating embeddings for {len(documents)} chunks...")
-        embedder = NVEmbedPipeline()
-        embeddings = embedder.embed_texts(documents)
+    def _build_filter(self, filters: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Build a filter for the vector search.
         
-        # Step 3: Store in vector database
-        print(f"\n💾 Step 3: Storing in vector database...")
-        db = QdrantDB()
+        Args:
+            filters: Dictionary of filters to apply
+            
+        Returns:
+            Filter dictionary for Qdrant
+        """
+        if not filters:
+            return None
+            
+        must_conditions = []
         
-        # Clear existing collection and create new one
-        collection_name = "lesson_plans_improved"
-        try:
-            db.client.delete_collection(collection_name)
-            print("🗑️  Cleared existing collection")
-        except:
-            pass
+        for key, value in filters.items():
+            if key in ["chapter", "subject"]:
+                # Handle metadata filters
+                must_conditions.append({
+                    "key": f"metadata.{key}",
+                    "match": {"value": value}
+                })
+                
+        if must_conditions:
+            return {"must": must_conditions}
+        else:
+            return None
+            
+    def search(self, query: str, filters: Dict[str, Any] = None, limit: int = 5) -> List[Dict[str, Any]]:
+        """
+        Search for relevant documents.
         
-        # Update collection name for improved data
-        db.collection_name = collection_name
-        document_ids = db.insert_documents(embeddings, documents, metadata)
+        Args:
+            query: Query text
+            filters: Optional filters to apply
+            limit: Maximum number of results to return
+            
+        Returns:
+            List of relevant documents
+        """
+        # Generate query embedding
+        query_embedding = self.embedder.embed_query(query)
         
-        print(f"✅ Successfully set up database with {len(documents)} document chunks!")
+        # Build filter
+        qdrant_filter = self._build_filter(filters)
         
-        return True
+        # Search for relevant documents
+        results = self.db.search_documents(
+            query_vector=query_embedding,
+            limit=limit,
+            filter=qdrant_filter
+        )
         
-    except Exception as e:
-        print(f"❌ Error during setup: {e}")
-        import traceback
-        traceback.print_exc()
-        return False
-
-def test_improved_lesson_generation():
-    """Test lesson plan generation with improved data"""
-    print("\n🎯 Step 4: Testing improved lesson plan generation...")
-    
-    try:
-        # Create generator with improved collection
-        generator = LessonPlanGenerator()
-        generator.db.collection_name = "lesson_plans_improved"  # Use improved collection
+        return results
         
-        test_cases = [
-            {
-                "query": "atomic theory and molecular structure",
-                "chapter": "Chapter 3",
-                "subject": "General",
-                "description": "Atomic theory (Chapter 3)"
-            },
-            {
-                "query": "matter and its properties",
-                "chapter": "Chapter 1", 
-                "subject": "General",
-                "description": "Matter properties (Chapter 1)"
-            },
-            {
-                "query": "motion and force concepts",
-                "chapter": "Chapter 9",
-                "subject": "General", 
-                "description": "Motion and force (Chapter 9)"
+    def generate_lesson_plan(self, query: str, filters: Dict[str, Any] = None) -> Dict[str, Any]:
+        """
+        Generate a lesson plan based on a query.
+        
+        Args:
+            query: Query text
+            filters: Optional filters to apply
+            
+        Returns:
+            Generated lesson plan
+        """
+        # Search for relevant documents
+        results = self.search(query, filters, limit=10)
+        
+        if not results:
+            return {
+                "error": "No relevant documents found",
+                "query": query,
+                "filters": filters
             }
-        ]
+            
+        # Extract content from results
+        contents = []
+        metadata_list = []
         
-        for i, test_case in enumerate(test_cases, 1):
-            print(f"\n📝 Test {i}: {test_case['description']}")
-            print(f"   Chapter: {test_case['chapter']}, Subject: {test_case['subject']}")
+        for result in results:
+            # Extract payload
+            payload = result.payload
             
-            lesson_plan = generator.generate_lesson_plan(
-                query=test_case['query'],
-                filter_chapter=test_case['chapter'],
-                filter_subject=test_case['subject']
-            )
+            # Extract content
+            if "text" in payload:
+                contents.append(payload["text"])
+                
+            # Extract metadata
+            if "metadata" in payload:
+                metadata_list.append(payload["metadata"])
+                
+        # Get unique chapters
+        chapters = set()
+        for metadata in metadata_list:
+            if "chapter" in metadata:
+                chapters.add(metadata["chapter"])
+                
+        # Format the plan
+        lesson_plan = {
+            "title": f"Lesson Plan: {query}",
+            "query": query,
+            "generated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+            "sources": {
+                "count": len(contents),
+                "chapters": list(chapters)
+            },
+            "content": {
+                "introduction": f"This lesson plan is designed to teach students about {query}.",
+                "objectives": [
+                    f"Understand the key concepts of {query}",
+                    f"Apply knowledge of {query} to solve problems",
+                    f"Analyze and evaluate information related to {query}"
+                ],
+                "main_content": contents[:3],  # First 3 content pieces
+                "activities": [
+                    f"Group discussion on {query}",
+                    f"Problem-solving exercises related to {query}",
+                    f"Research project on {query}"
+                ],
+                "assessment": f"Quiz on {query} concepts and applications",
+                "conclusion": f"Review of key points about {query}"
+            },
+            "references": {
+                "source_documents": [
+                    {
+                        "chapter": meta.get("chapter", "Unknown"),
+                        "section": meta.get("section", "")
+                    }
+                    for meta in metadata_list[:5]  # First 5 metadata items
+                ]
+            }
+        }
+        
+        return lesson_plan
+
+def check_qdrant_collection():
+    """
+    Check if the Qdrant collection exists and has documents.
+    
+    Returns:
+        True if collection exists and has documents, False otherwise
+    """
+    try:
+        # Initialize connector
+        db = QdrantConnector(
+            host=QDRANT_HOST,
+            port=QDRANT_PORT,
+            collection_name=QDRANT_COLLECTION_NAME
+        )
+        
+        # Get collection info
+        collection_info = db.get_collection_info()
+        
+        # Check if collection exists and has vectors
+        if collection_info and "vectors_count" in collection_info and collection_info["vectors_count"] > 0:
+            logger.info(f"✅ Qdrant collection '{QDRANT_COLLECTION_NAME}' exists with {collection_info['vectors_count']} vectors")
+            return True
+        else:
+            logger.warning(f"⚠️ Qdrant collection '{QDRANT_COLLECTION_NAME}' does not exist or has no vectors")
+            return False
             
-            # Save to outputs
-            filename = f"improved_lesson_plan_{test_case['query'].replace(' ', '_').lower()}.json"
-            output_path = os.path.join('outputs/lesson_plans', filename)
-            
-            import json
-            with open(output_path, 'w', encoding='utf-8') as f:
-                json.dump(lesson_plan, f, indent=2, ensure_ascii=False)
-            
-            print(f"📁 Saved to: {filename}")
-            
-            # Show results summary
-            sources = lesson_plan.get('sources', [])
-            print(f"   📚 Found {len(sources)} source documents")
-            if sources:
-                print(f"   📖 Sample source: {sources[0].get('text', '')[:100]}...")
+    except Exception as e:
+        logger.error(f"Error checking Qdrant collection: {e}")
+        return False
+
+def setup_database():
+    """
+    Set up the database by running the data processing script.
+    
+    Returns:
+        True if successful, False otherwise
+    """
+    try:
+        logger.info("Setting up database...")
+        
+        # Get the path to the process_improved_data.py script
+        script_path = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            "src", "scripts", "process_improved_data.py"
+        )
+        
+        # Run the script
+        os.system(f"python {script_path}")
+        
+        return True
         
     except Exception as e:
-        print(f"❌ Error during lesson generation test: {e}")
-        import traceback
-        traceback.print_exc()
+        logger.error(f"Error setting up database: {e}")
+        return False
+
+def save_lesson_plan(lesson_plan: Dict[str, Any], filename: str) -> bool:
+    """
+    Save a lesson plan to a file.
+    
+    Args:
+        lesson_plan: Lesson plan to save
+        filename: Name of the file to save to
+        
+    Returns:
+        True if successful, False otherwise
+    """
+    try:
+        # Ensure the output directory exists
+        os.makedirs(LESSON_PLANS_DIR, exist_ok=True)
+        
+        # Sanitize filename
+        safe_filename = filename.replace(" ", "_").lower()
+        if not safe_filename.endswith(".json"):
+            safe_filename += ".json"
+            
+        # Create full path
+        filepath = os.path.join(LESSON_PLANS_DIR, safe_filename)
+        
+        # Save the lesson plan
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(lesson_plan, f, indent=2)
+            
+        logger.info(f"✅ Saved lesson plan to {filepath}")
+        return True
+        
+    except Exception as e:
+        logger.error(f"Error saving lesson plan: {e}")
+        return False
 
 def main():
-    """Main pipeline function"""
-    print("🔍 Checking Qdrant connection...")
-    if not check_qdrant_connection():
-        print("\nTroubleshooting:")
-        print("1. Make sure Qdrant is running: docker run -d -p 6333:6333 qdrant/qdrant")
-        print("2. Check if port 6333 is available")
-        return
+    """Main function to run the pipeline."""
+    logger.info("Starting EduPlan AI improved pipeline")
     
-    # Run the improved pipeline
-    if setup_improved_database():
-        test_improved_lesson_generation()
+    # Check if the database is ready
+    if not check_qdrant_collection():
+        logger.info("Database not ready, setting up...")
+        if not setup_database():
+            logger.error("Failed to set up database")
+            return
+    
+    # Initialize the lesson plan generator
+    generator = LessonPlanGenerator()
+    
+    # Define example topics
+    example_topics = [
+        "Atomic theory and molecular structure",
+        "Laws of motion and mechanical energy",
+        "Cell biology and genetics",
+        "Algebra and equation solving"
+    ]
+    
+    # Generate and save lesson plans
+    for topic in example_topics:
+        logger.info(f"Generating lesson plan for topic: {topic}")
         
-        print(f"\n🎉 Improved Pipeline Setup Complete!")
-        print("="*50)
-        print("You can now:")
-        print("1. Generate high-quality lesson plans with clean text")
-        print("2. Access all 12 chapters including Chapter 3")
-        print("3. Use improved semantic search with 818 document chunks")
-        print("4. Benefit from 65,377 words of clean educational content")
-    else:
-        print("❌ Pipeline setup failed!")
+        # Generate the lesson plan
+        lesson_plan = generator.generate_lesson_plan(topic)
+        
+        # Save the lesson plan
+        filename = f"lesson_plan_{topic.replace(' ', '_').lower()}.json"
+        save_lesson_plan(lesson_plan, filename)
+    
+    logger.info("Pipeline completed successfully")
 
 if __name__ == "__main__":
     main()

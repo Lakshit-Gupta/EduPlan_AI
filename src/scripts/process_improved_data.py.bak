@@ -1,0 +1,292 @@
+#!/usr/bin/env python3
+"""
+Process improved data for EduPlan AI system.
+This script loads the improved JSON data, generates embeddings using NV-Embed,
+and stores them in the Qdrant vector database for efficient retrieval.
+"""
+
+import sys
+import os
+import json
+import time
+from typing import List, Dict, Any, Tuple
+from pathlib import Path
+import logging
+
+# Add parent directory to path to import modules
+sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
+
+# Import required modules
+from src.models.embedding_model import NVEmbedPipeline
+from src.database.qdrant_connector import QdrantConnector
+from src.core.config import QDRANT_COLLECTION_NAME, QDRANT_HOST, QDRANT_PORT, QDRANT_VECTOR_SIZE
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+def load_improved_data(data_dir: str = "../../data/processed_improved") -> List[Dict[str, Any]]:
+    """
+    Load all improved data files from the specified directory.
+    
+    Args:
+        data_dir: Directory containing improved JSON data files
+    
+    Returns:
+        List of dictionaries containing the loaded data
+    """
+    data_path = Path(os.path.join(os.path.dirname(__file__), data_dir))
+    logger.info(f"Loading improved data from {data_path}")
+    
+    all_data = []
+    
+    if not data_path.exists():
+        logger.error(f"Data directory not found: {data_path}")
+        return all_data
+    
+    for json_file in data_path.glob("*_improved.json"):
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                logger.info(f"Loaded {json_file.name}: {len(data) if isinstance(data, list) else '1'} items")
+                all_data.append({
+                    "file": json_file.name,
+                    "data": data
+                })
+        except Exception as e:
+            logger.error(f"Error loading {json_file}: {e}")
+    
+    return all_data
+
+def prepare_documents(improved_data: List[Dict[str, Any]]) -> Tuple[List[str], List[Dict[str, Any]]]:
+    """
+    Extract text and metadata from improved data.
+    
+    Args:
+        improved_data: List of dictionaries containing improved data
+    
+    Returns:
+        Tuple containing (text_chunks, metadata)
+    """
+    texts = []
+    metadata = []
+    
+    for file_data in improved_data:
+        filename = file_data["file"]
+        data = file_data["data"]
+        
+        # Extract chapter information from filename
+        chapter_name = filename.split('_')[0]
+        
+        # Determine the format of the data
+        if isinstance(data, list) and all(isinstance(item, dict) for item in data):
+            # Old format (simple list of dictionaries)
+            logger.info(f"Processing {filename} using simple format")
+            for item in data:
+                try:
+                    # Get the text content
+                    content = item.get("content", "")
+                    if not content:
+                        continue
+                        
+                    # Add text to chunks
+                    texts.append(content)
+                    
+                    # Prepare metadata
+                    meta = {
+                        "chapter": item.get("chapter", chapter_name),
+                        "source": filename,
+                        "type": item.get("type", "unknown"),
+                        "section": item.get("section", ""),
+                        "subsection": item.get("subsection", ""),
+                        "index": item.get("index", 0)
+                    }
+                    metadata.append(meta)
+                except Exception as e:
+                    logger.error(f"Error processing item in {filename}: {e}")
+                    logger.error(f"Item: {str(item)[:100]}...")
+        elif isinstance(data, dict) and "metadata" in data and "sections" in data:
+            # New format (complex structure with metadata and sections)
+            logger.info(f"Processing {filename} using complex format")
+            chapter_metadata = data.get("metadata", {})
+            chapter_number = chapter_metadata.get("chapter_number", chapter_name.replace("Chapter_", ""))
+            chapter_title = chapter_metadata.get("chapter_title", "")
+            
+            # Process each section
+            for section in data.get("sections", []):
+                section_title = section.get("title", "")
+                section_content = section.get("content", [])
+                
+                if isinstance(section_content, list):
+                    # Join paragraph list to create a single chunk
+                    content = " ".join(section_content)
+                    if not content.strip():
+                        continue
+                    
+                    # Add text to chunks
+                    texts.append(content)
+                    
+                    # Prepare metadata
+                    meta = {
+                        "chapter": f"Chapter {chapter_number}",
+                        "source": filename,
+                        "type": section.get("type", "section"),
+                        "section": section_title,
+                        "subsection": "",
+                        "index": len(texts)
+                    }
+                    metadata.append(meta)
+                else:
+                    logger.warning(f"Unexpected section content format in {filename}, section: {section_title}")
+        else:
+            logger.warning(f"Unknown data format for file: {filename}")
+    
+    logger.info(f"Prepared {len(texts)} documents with metadata")
+    return texts, metadata
+
+def generate_embeddings(texts: List[str]) -> List[List[float]]:
+    """
+    Generate embeddings for text chunks using NV-Embed.
+    
+    Args:
+        texts: List of text chunks to embed
+    
+    Returns:
+        List of embedding vectors
+    """
+    logger.info("Initializing NV-Embed model...")
+    embedding_model = NVEmbedPipeline()
+    
+    logger.info(f"Generating embeddings for {len(texts)} documents...")
+    start_time = time.time()
+    embeddings = embedding_model.embed_texts(texts)
+    elapsed = time.time() - start_time
+    
+    logger.info(f"Generated {len(embeddings)} embeddings in {elapsed:.2f} seconds")
+    
+    # Debug: Check the format of embeddings
+    if embeddings and len(embeddings) > 0:
+        first_emb = embeddings[0]
+        logger.info(f"First embedding type: {type(first_emb)}")
+        logger.info(f"First embedding length: {len(first_emb)}")
+        if hasattr(first_emb, 'tolist') and callable(getattr(first_emb, 'tolist')):
+            logger.info("Converting embeddings from numpy/tensor to list format")
+            embeddings = [emb.tolist() for emb in embeddings]
+    
+    return embeddings
+
+def store_in_database(embeddings: List[List[float]], 
+                     texts: List[str], 
+                     metadata: List[Dict[str, Any]],
+                     collection_name: str = None) -> bool:
+    """
+    Store embeddings, texts, and metadata in Qdrant vector database.
+    
+    Args:
+        embeddings: List of embedding vectors
+        texts: List of text chunks
+        metadata: List of metadata dictionaries
+        collection_name: Name of collection to use
+    
+    Returns:
+        True if successful, False otherwise
+    """
+    try:
+        # Use specified collection name or default from config
+        collection = collection_name or QDRANT_COLLECTION_NAME
+        logger.info(f"Storing data in collection: {collection}")
+        
+        # Ensure the embeddings are proper lists of floats
+        if embeddings and len(embeddings) > 0:
+            first_embedding = embeddings[0]
+            # If embeddings are not proper lists, convert them
+            if not isinstance(first_embedding, list):
+                if hasattr(first_embedding, 'tolist') and callable(getattr(first_embedding, 'tolist')):
+                    logger.info("Converting embeddings to proper list format")
+                    embeddings = [emb.tolist() for emb in embeddings]
+                else:
+                    embeddings = [list(emb) for emb in embeddings]
+        
+        # Double-check dimensions after potential conversion
+        vector_size = len(embeddings[0]) if embeddings and len(embeddings) > 0 else QDRANT_VECTOR_SIZE
+        logger.info(f"Vector size after conversion check: {vector_size}")
+        
+        # Initialize database connector with proper parameters
+        db = QdrantConnector(
+            host=QDRANT_HOST,
+            port=QDRANT_PORT,
+            collection_name=collection,
+            vector_size=vector_size  # This should now be correct
+        )
+        
+        # Recreate collection with the correct vector size
+        logger.info(f"Creating collection with {vector_size} dimensions")
+        db.recreate_collection()
+        
+        # Prepare documents for insertion
+        documents = []
+        for i, (embedding, text, meta) in enumerate(zip(embeddings, texts, metadata)):
+            # Ensure each embedding is a list of floats
+            if not isinstance(embedding, list):
+                embedding = list(embedding)
+                
+            doc = {
+                "id": i,
+                "vector": embedding,
+                "payload": {
+                    "text": text,
+                    "metadata": meta
+                }
+            }
+            documents.append(doc)
+        
+        # Insert documents
+        logger.info(f"Inserting {len(documents)} documents into database")
+        db.insert_documents(documents)
+        
+        logger.info(f"Successfully stored {len(documents)} documents in database")
+        return True
+    
+    except Exception as e:
+        logger.error(f"Error storing data in database: {e}")
+        import traceback
+        traceback.print_exc()
+        return False
+
+def main():
+    """Main processing function"""
+    logger.info("Starting improved data processing with NV-Embed")
+    
+    # Load improved data
+    improved_data = load_improved_data()
+    if not improved_data:
+        logger.error("No improved data found. Exiting.")
+        return
+    
+    # Prepare documents
+    texts, metadata = prepare_documents(improved_data)
+    if not texts:
+        logger.error("No text chunks extracted. Exiting.")
+        return
+    
+    # Generate embeddings
+    embeddings = generate_embeddings(texts)
+    if not embeddings or len(embeddings) != len(texts):
+        logger.error(f"Embedding generation failed. Got {len(embeddings)} embeddings for {len(texts)} texts.")
+        return
+    
+    # Store in database
+    collection_name = "eduplan_improved"
+    success = store_in_database(embeddings, texts, metadata, collection_name)
+    
+    if success:
+        logger.info(f"✅ Processing completed successfully! Collection: {collection_name}")
+        logger.info(f"   Processed {len(texts)} documents across {len(improved_data)} files")
+    else:
+        logger.error("❌ Processing failed.")
+
+if __name__ == "__main__":
+    main()

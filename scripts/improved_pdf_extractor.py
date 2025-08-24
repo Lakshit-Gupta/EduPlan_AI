@@ -156,7 +156,7 @@ class ImprovedPDFExtractor:
         return chapter_info
     
     def split_into_sections(self, pages: List[Dict]) -> List[Dict[str, Any]]:
-        """Split content into logical sections"""
+        """Split content into logical sections with appropriate chunk sizes for embeddings"""
         sections = []
         current_section = None
         
@@ -168,6 +168,8 @@ class ImprovedPDFExtractor:
                 if content_type in ['chapter_title', 'heading']:
                     # Start new section
                     if current_section:
+                        # Ensure content chunks are properly sized for embeddings
+                        self._optimize_section_chunks(current_section)
                         sections.append(current_section)
                     
                     current_section = {
@@ -188,9 +190,79 @@ class ImprovedPDFExtractor:
         
         # Add last section
         if current_section:
+            self._optimize_section_chunks(current_section)
             sections.append(current_section)
         
         return sections
+    
+    def _optimize_section_chunks(self, section: Dict[str, Any]) -> None:
+        """Optimize section content chunks for better embeddings (around 500 tokens)"""
+        # Target length for optimal embedding chunks (around 2000-2500 chars ~ 500 tokens)
+        TARGET_CHUNK_LENGTH = 2000
+        MIN_CHUNK_LENGTH = 200
+        
+        # Process regular content
+        if 'content' in section and section['content']:
+            new_content = []
+            current_chunk = ""
+            
+            for text in section['content']:
+                # If this would make the chunk too big, save current and start new
+                if len(current_chunk) + len(text) > TARGET_CHUNK_LENGTH and len(current_chunk) > MIN_CHUNK_LENGTH:
+                    new_content.append(current_chunk.strip())
+                    current_chunk = text
+                else:
+                    # Add to current chunk
+                    if current_chunk:
+                        current_chunk += " " + text
+                    else:
+                        current_chunk = text
+            
+            # Don't forget the last chunk
+            if current_chunk:
+                new_content.append(current_chunk.strip())
+                
+            section['content'] = new_content
+        
+        # Also combine very short activities
+        if 'activities' in section and section['activities']:
+            new_activities = []
+            current_chunk = ""
+            
+            for activity in section['activities']:
+                if len(current_chunk) + len(activity) > TARGET_CHUNK_LENGTH and len(current_chunk) > MIN_CHUNK_LENGTH:
+                    new_activities.append(current_chunk.strip())
+                    current_chunk = activity
+                else:
+                    if current_chunk:
+                        current_chunk += " " + activity
+                    else:
+                        current_chunk = activity
+            
+            if current_chunk:
+                new_activities.append(current_chunk.strip())
+            
+            section['activities'] = new_activities
+        
+        # Same for questions
+        if 'questions' in section and section['questions']:
+            new_questions = []
+            current_chunk = ""
+            
+            for question in section['questions']:
+                if len(current_chunk) + len(question) > TARGET_CHUNK_LENGTH and len(current_chunk) > MIN_CHUNK_LENGTH:
+                    new_questions.append(current_chunk.strip())
+                    current_chunk = question
+                else:
+                    if current_chunk:
+                        current_chunk += " " + question
+                    else:
+                        current_chunk = question
+            
+            if current_chunk:
+                new_questions.append(current_chunk.strip())
+            
+            section['questions'] = new_questions
     
     def process_single_pdf(self, pdf_path: str) -> bool:
         """Process a single PDF file"""

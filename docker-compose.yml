@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "${QDRANT_PORT:-6333}:6333"  # REST API
+      - "6334:6334"                   # gRPC API
+    volumes:
+      - ./qdrant_storage:/qdrant/storage  # Persistent storage
+    environment:
+      - QDRANT_ALLOW_CORS=true
+    restart: unless-stopped
